@@ -23,7 +23,7 @@ function panel() {
 
       <div className="progress-section">
         <div style={{ width: 60, height: 60 }}>
-          <CircularProgressbar value={66} />
+          <CircularProgressbar value={64} />
         </div>
         <div className="percentage">
           <span className="score">64%</span>
