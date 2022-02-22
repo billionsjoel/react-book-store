@@ -20,8 +20,8 @@ function panel() {
       </div>
 
       <div className="progress-section">
-        <div className="progress-bar">
-          <div className="progress" />
+        <div className="progress">
+          <div className="chart" data-percent="60" />
         </div>
         <div className="percentage">
           <span>64%</span>

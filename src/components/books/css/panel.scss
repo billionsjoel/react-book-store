@@ -73,13 +73,14 @@
 	}
 
 	& .progress-section {
-		display: flex;
-		& .progress-bar {
-			height: 4rem;
-			width: 4rem;
-			color: $white-two;
-			border: 5px solid;
-			border-radius: 100%;
+		& .progress {
+			width: 100%;
+		}
+		& .progress .chart {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			font-size: 40px;
 		}
 	}
 }
