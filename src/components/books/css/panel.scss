@@ -5,6 +5,9 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem;
+	border-radius: 1px;
+	background-color: #ffffff;
+	margin: 2rem 1rem;
 
 	& .details {
 		display: flex;
@@ -12,9 +15,6 @@
 
 		& .heading {
 			& .genre {
-				width: 3.063rem;
-				height: 1.125rem;
-				margin: 0 2.438rem 0 0;
 				opacity: 0.5;
 				font-family: Montserrat;
 				font-size: 0.875rem;
@@ -23,13 +23,11 @@
 				font-style: normal;
 				line-height: normal;
 				letter-spacing: normal;
-				color: var(--black-two);
+				color: $black-two;
 			}
 			& .title {
-				width: 12.313rem;
-				height: 1.813rem;
-				margin: 0.188rem 20.188rem 0 0;
 				font-family: RobotoSlab;
+				margin: 0.5rem 0 0 0;
 				font-size: 1.375rem;
 				font-weight: bold;
 				font-stretch: normal;
@@ -40,13 +38,18 @@
 			}
 			& .name {
 				font-family: RobotoSlab;
+				margin: 0.25rem 0 0;
+				font-weight: 300;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: normal;
+				letter-spacing: normal;
 				font-size: 1rem;
 				color: #4386bf;
 			}
 		}
 
 		& .buttons {
-			background-color: orange;
 			& ul {
 				display: flex;
 				justify-content: space-between;
@@ -54,7 +57,17 @@
 				gap: 1rem;
 				padding: 0;
 				list-style: none;
-				background-color: greenyellow;
+
+				& li {
+					font-family: RobotoSlab;
+					font-size: 1rem;
+					font-weight: 300;
+					font-stretch: normal;
+					font-style: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					color: #4386bf;
+				}
 			}
 		}
 	}
