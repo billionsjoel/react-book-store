@@ -73,14 +73,36 @@
 	}
 
 	& .progress-section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+
 		& .progress {
 			width: 100%;
 		}
+
 		& .progress .chart {
 			position: relative;
 			width: 100%;
 			height: 100%;
 			font-size: 40px;
+		}
+
+		& .percentage {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			font-family: Montserrat;
+
+			& .score {
+				font-size: 2rem;
+			}
+
+			& .completed {
+				color: $black-two;
+			}
 		}
 	}
 }

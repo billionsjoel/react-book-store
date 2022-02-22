@@ -21,11 +21,11 @@ function panel() {
 
       <div className="progress-section">
         <div className="progress">
-          <div className="chart" data-percent="60" />
+          <div className="chart" data-percent="64" />
         </div>
         <div className="percentage">
-          <span>64%</span>
-          <span>completed</span>
+          <span className="score">64%</span>
+          <span className="completed">completed</span>
         </div>
       </div>
 
