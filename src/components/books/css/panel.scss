@@ -71,4 +71,15 @@
 			}
 		}
 	}
+
+	& .progress-section {
+		display: flex;
+		& .progress-bar {
+			height: 4rem;
+			width: 4rem;
+			color: $white-two;
+			border: 5px solid;
+			border-radius: 100%;
+		}
+	}
 }

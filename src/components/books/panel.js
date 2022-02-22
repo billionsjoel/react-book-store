@@ -19,7 +19,7 @@ function panel() {
         </div>
       </div>
 
-      <div className="progress-container">
+      <div className="progress-section">
         <div className="progress-bar">
           <div className="progress" />
         </div>
