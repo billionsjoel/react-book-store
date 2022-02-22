@@ -26,8 +26,8 @@ function form() {
   return (
     <div className="form-container">
       <h3 className="form-title">ADD NEW BOOK</h3>
-      <div className="form">
-        <form onSubmit={submitBookToStore}>
+      <div className="forms">
+        <form onSubmit={submitBookToStore} className="form">
           <input
             type="text"
             className="input-title"
