@@ -8,6 +8,8 @@ function App() {
     <>
       <Nav />
       <Panel />
+      <Panel />
+      <Panel />
       <Form />
     </>
   );
