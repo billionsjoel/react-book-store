@@ -1,5 +1,7 @@
 import './css/panel.scss';
 import React from 'react';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 function panel() {
   return (
@@ -20,8 +22,8 @@ function panel() {
       </div>
 
       <div className="progress-section">
-        <div className="progress">
-          <div className="chart" data-percent="64" />
+        <div style={{ width: 60, height: 60 }}>
+          <CircularProgressbar value={66} />
         </div>
         <div className="percentage">
           <span className="score">64%</span>
