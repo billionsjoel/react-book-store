@@ -1,3 +1,4 @@
+import './css/panel.scss';
 import React from 'react';
 
 function panel() {
@@ -31,7 +32,9 @@ function panel() {
       <div className="chapter">
         <h3>CURRENT CHAPTER</h3>
         <h4>CHAPTER 17</h4>
-        <button type="button" className="btn">UPDATE PROGRESS</button>
+        <button type="button" className="btn">
+          UPDATE PROGRESS
+        </button>
       </div>
     </div>
   );
