@@ -7,13 +7,13 @@ function panel() {
       <div className="details">
         <div className="heading">
           <div className="genre">Action</div>
-          <div className="title">Hunger Games</div>
+          <div className="title">The Hunger Games</div>
           <div className="name">Suzzanne Collins</div>
         </div>
         <div className="buttons">
           <ul>
             <li>Comments</li>
-            <li>| Remove |</li>
+            <li>| &nbsp; Remove &nbsp; |</li>
             <li>Edit</li>
           </ul>
         </div>

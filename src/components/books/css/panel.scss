@@ -1,3 +1,41 @@
 .panel-container {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+
+	& .details {
+		display: flex;
+		flex-direction: column;
+
+		& .heading {
+			& .genre {
+				width: 3.063rem;
+				height: 1.125rem;
+				margin: 0 2.438rem 0 0;
+				opacity: 0.5;
+				font-family: Montserrat;
+				font-size: 0.875rem;
+				font-weight: bold;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				color: var(--black-two);
+			}
+		}
+
+		& .buttons {
+			background-color: orange;
+			& ul {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 1rem;
+				padding: 0;
+				list-style: none;
+				background-color: greenyellow;
+			}
+		}
+	}
 }
