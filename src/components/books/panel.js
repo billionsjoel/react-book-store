@@ -29,9 +29,9 @@ function panel() {
         </div>
       </div>
 
-      <div className="chapter">
-        <h3>CURRENT CHAPTER</h3>
-        <h4>CHAPTER 17</h4>
+      <div className="chapter-container">
+        <div className="chapter-title">CURRENT CHAPTER</div>
+        <h4 className="chapter-number">Chapter 17</h4>
         <button type="button" className="btn">
           UPDATE PROGRESS
         </button>
