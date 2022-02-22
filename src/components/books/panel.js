@@ -1,7 +1,40 @@
 import React from 'react';
 
 function panel() {
-  return <div>panel</div>;
+  return (
+    <div className="panel-container">
+      <div className="details">
+        <div className="heading">
+          <div className="genre">Action</div>
+          <div className="title">Hunger Games</div>
+          <div className="name">Suzzanne Collins</div>
+        </div>
+        <div className="buttons">
+          <ul>
+            <li>Comments</li>
+            <li>| Remove |</li>
+            <li>Edit</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="progress-container">
+        <div className="progress-bar">
+          <div className="progress" />
+        </div>
+        <div className="percentage">
+          <span>64%</span>
+          <span>completed</span>
+        </div>
+      </div>
+
+      <div className="chapter">
+        <h3>CURRENT CHAPTER</h3>
+        <h4>CHAPTER 17</h4>
+        <button type="button" className="btn">UPDATE PROGRESS</button>
+      </div>
+    </div>
+  );
 }
 
 export default panel;
