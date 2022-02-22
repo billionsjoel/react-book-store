@@ -1,3 +1,5 @@
+@import 'utilities/variables';
+
 .panel-container {
 	display: flex;
 	justify-content: space-between;
@@ -22,6 +24,24 @@
 				line-height: normal;
 				letter-spacing: normal;
 				color: var(--black-two);
+			}
+			& .title {
+				width: 12.313rem;
+				height: 1.813rem;
+				margin: 0.188rem 20.188rem 0 0;
+				font-family: RobotoSlab;
+				font-size: 1.375rem;
+				font-weight: bold;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: normal;
+				letter-spacing: -0.2px;
+				color: $black-two;
+			}
+			& .name {
+				font-family: RobotoSlab;
+				font-size: 1rem;
+				color: #4386bf;
 			}
 		}
 
