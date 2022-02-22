@@ -1,9 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Nav from './components/books/nav';
-import Panel from './components/books/panel';
-import Form from './components/books/form';
 import Category from './components/categories/category';
+import Books from './components/books/books';
 
 function App() {
   return (
@@ -15,10 +14,7 @@ function App() {
           element={(
             <>
               <Nav />
-              <Panel />
-              <Panel />
-              <Panel />
-              <Form />
+              <Books />
             </>
     )}
         />
