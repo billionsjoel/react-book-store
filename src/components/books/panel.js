@@ -1,24 +1,32 @@
 import './css/panel.scss';
-import Prototypes from 'prop-types';
+import PropTypes from 'prop-types';
+import useDispatch from 'react-redux';
 import React from 'react';
 import { CircularProgressbar } from 'react-circular-progressbar';
+import { removeBook } from '../../redux/books/books';
 import 'react-circular-progressbar/dist/styles.css';
 
-function panel() {
+function panel({ id, title, category }) {
+  const dispatch = useDispatch();
+
+  const handleRemove = () => {
+    dispatch(removeBook({ id }));
+  };
+
   return (
     <div className="panel-container">
       <div className="details">
         <div className="heading">
-          <div className="genre">Action</div>
-          <div className="title">The Hunger Games</div>
+          <div className="genre">{category}</div>
+          <div className="title">{title}</div>
           <div className="name">Suzzanne Collins</div>
         </div>
         <div className="buttons">
-          <ul>
-            <li>Comments</li>
-            <li>| &nbsp; Remove &nbsp; |</li>
-            <li>Edit</li>
-          </ul>
+          <button type="button">Comments</button>
+          <button type="button" onClick={handleRemove}>
+            Remove
+          </button>
+          <button type="button">Edit</button>
         </div>
       </div>
 
@@ -42,5 +50,9 @@ function panel() {
     </div>
   );
 }
+
+panel.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default panel;
