@@ -1,137 +1,137 @@
 @import 'utilities/variables';
 
 .panel-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 2rem;
-	border-radius: 1px;
-	background-color: #fff;
-	margin: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1px;
+  background-color: #fff;
+  margin: 2rem 2rem;
 
-	& .details {
-		display: flex;
-		flex-direction: column;
+  & .details {
+    display: flex;
+    flex-direction: column;
 
-		& .heading {
-			& .genre {
-				opacity: 0.5;
-				font-family: 'Montserrat', sans-serif;
-				font-size: 0.875rem;
-				font-weight: bold;
-				font-stretch: normal;
-				font-style: normal;
-				line-height: normal;
-				letter-spacing: normal;
-				color: $black-two;
-			}
+    & .heading {
+      & .genre {
+        opacity: 0.5;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.875rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $black-two;
+      }
 
-			& .title {
-				font-family: 'RobotoSlab', sans-serif;
-				margin: 0.5rem 0 0 0;
-				font-size: 1.375rem;
-				font-weight: bold;
-				font-stretch: normal;
-				font-style: normal;
-				line-height: normal;
-				letter-spacing: -0.2px;
-				color: $black-two;
-			}
+      & .title {
+        font-family: 'RobotoSlab', sans-serif;
+        margin: 0.5rem 0 0 0;
+        font-size: 1.375rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.2px;
+        color: $black-two;
+      }
 
-			& .name {
-				font-family: 'RobotoSlab', sans-serif;
-				margin: 0.25rem 0 0;
-				font-weight: 300;
-				font-stretch: normal;
-				font-style: normal;
-				line-height: normal;
-				letter-spacing: normal;
-				font-size: 1rem;
-				color: #4386bf;
-			}
-		}
+      & .name {
+        font-family: 'RobotoSlab', sans-serif;
+        margin: 0.25rem 0 0;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        font-size: 1rem;
+        color: #4386bf;
+      }
+    }
 
-		& .buttons {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			gap: 1rem;
-			list-style: none;
+    & .buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      list-style: none;
 
-			& .button {
-				font-family: 'RobotoSlab', sans-serif;
-				font-size: 1rem;
-				font-weight: 300;
-				font-stretch: normal;
-				font-style: normal;
-				line-height: normal;
-				letter-spacing: normal;
-				color: #4386bf;
-				background-color: #fff;
-				margin: 0.9rem 0 0.5rem -0.5rem;
-				border: none;
-			}
-		}
-	}
+      & .button {
+        font-family: 'RobotoSlab', sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #4386bf;
+        background-color: #fff;
+        margin: 0.9rem 0 0.5rem -0.5rem;
+        border: none;
+      }
+    }
+  }
 
-	& .progress-section {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 1rem;
+  & .progress-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
-		& .percentage {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			font-family: 'Montserrat', sans-serif;
+    & .percentage {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
 
-			& .score {
-				font-size: 2rem;
-			}
+      & .score {
+        font-size: 2rem;
+      }
 
-			& .completed {
-				color: $black-two;
-			}
-		}
-	}
+      & .completed {
+        color: $black-two;
+      }
+    }
+  }
 
-	& .chapter-container {
-		& .chapter-title {
-			opacity: 0.5;
-			font-family: 'RobotoSlab', sans-serif;
-			font-size: 0.813rem;
-			font-weight: 300;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			color: $black-two;
-		}
+  & .chapter-container {
+    & .chapter-title {
+      opacity: 0.5;
+      font-family: 'RobotoSlab', sans-serif;
+      font-size: 0.813rem;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $black-two;
+    }
 
-		& .chapter-number {
-			font-family: 'RobotoSlab', sans-serif;
-			font-size: 1rem;
-			font-weight: 300;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: -0.4px;
-			color: $black-two;
-		}
+    & .chapter-number {
+      font-family: 'RobotoSlab', sans-serif;
+      font-size: 1rem;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.4px;
+      color: $black-two;
+    }
 
-		& .btn {
-			padding: 0.438rem 1.188rem 0.5rem 1.375rem;
-			border-radius: 3px;
-			border: none;
-			font-size: 0.813rem;
-			color: #fff;
-			font-family: 'RobotoSlab', sans-serif;
-			line-height: normal;
-			letter-spacing: 0.5px;
-			text-align: center;
-			background-color: #0290ff;
-		}
-	}
+    & .btn {
+      padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+      border-radius: 3px;
+      border: none;
+      font-size: 0.813rem;
+      color: #fff;
+      font-family: 'RobotoSlab', sans-serif;
+      line-height: normal;
+      letter-spacing: 0.5px;
+      text-align: center;
+      background-color: #0290ff;
+    }
+  }
 }
