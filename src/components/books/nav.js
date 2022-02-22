@@ -7,7 +7,7 @@ function nav() {
       <div className="menu">
         <h1>Bookstore CMS</h1>
         <ul>
-          <li>Books</li>
+          <li>BOOKS</li>
           <li>CATEGORIES</li>
         </ul>
       </div>
