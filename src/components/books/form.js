@@ -1,43 +1,51 @@
 import './css/form.scss';
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../../redux/books/books';
 
-const dispatch = useDispatch();
+function form() {
+  const [title, setTitle] = useState('');
+  const [category, setCategory] = useState('');
+  const dispatch = useDispatch();
 
-const submitBookToStore = () => {
-  const newBook = {
-    id,
-    title,
-    author
+  const submitBookToStore = (e) => {
+    e.preventDefault();
+    dispatch(
+      addBook({
+        title,
+        category,
+      }),
+    );
+
+    setTitle('');
+    setCategory('');
   };
 
-  dispatch(addBook(newBook));
-};
-
-function form()
-{
-  const [title, setTitile] = useState('');
   return (
     <div className="form-container">
       <h3 className="form-title">ADD NEW BOOK</h3>
       <div className="form">
-        <input
-          type="text"
-          className="input-title"
-          name=""
-          id=""
-          placeholder="Book title"
-        />
-        <select name="categories" id="category-id" className="input-categories">
-          <option value="Action">Action</option>
-          <option value="Fiction">Fiction</option>
-          <option value="Economy">Economy</option>
-        </select>
-        <button type="button" onClick={submitBookToStore} className="btn-submit">
-          ADD BOOK
-        </button>
+        <form onSubmit={submitBookToStore}>
+          <input
+            type="text"
+            className="input-title"
+            value={title}
+            placeholder="Book title"
+            onChange={(e) => setTitle(e.target.value)}
+          />
+          <select
+            name="categories"
+            id="category-id"
+            className="input-categories"
+          >
+            <option value="Action">Action</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Economy">Economy</option>
+          </select>
+          <button type="submit" className="btn-submit">
+            ADD BOOK
+          </button>
+        </form>
       </div>
     </div>
   );
