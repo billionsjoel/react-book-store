@@ -1,4 +1,4 @@
-import './css/nav.css';
+import './css/nav.scss';
 import React from 'react';
 
 function nav() {
@@ -17,7 +17,7 @@ function nav() {
           height="25"
           width="25"
           xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
+          className="user-icon"
           viewBox="0 0 20 20"
           fill="currentColor"
         >
