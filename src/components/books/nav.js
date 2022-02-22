@@ -1,5 +1,6 @@
 import './css/nav.scss';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function nav() {
   return (
@@ -7,8 +8,12 @@ function nav() {
       <div className="menu">
         <h1>Bookstore CMS</h1>
         <ul>
-          <li>BOOKS</li>
-          <li>CATEGORIES</li>
+          <li>
+            <Link to="/">BOOKS</Link>
+          </li>
+          <li>
+            <Link to="/categories">CATEGORIES</Link>
+          </li>
         </ul>
       </div>
 
