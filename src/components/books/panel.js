@@ -1,6 +1,6 @@
 import './css/panel.scss';
 import PropTypes from 'prop-types';
-import useDispatch from 'react-redux';
+import { useDispatch } from 'react-redux';
 import React from 'react';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import { removeBook } from '../../redux/books/books';
@@ -53,6 +53,8 @@ function panel({ id, title, category }) {
 
 panel.propTypes = {
   title: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default panel;
