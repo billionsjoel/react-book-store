@@ -22,11 +22,11 @@ function panel({ id, title, category }) {
           <div className="name">Suzzanne Collins</div>
         </div>
         <div className="buttons">
-          <button type="button">Comments</button>
-          <button type="button" onClick={handleRemove}>
+          <button type="button" className="button">Comments</button>
+          <button type="button" className="button" onClick={handleRemove}>
             Remove
           </button>
-          <button type="button">Edit</button>
+          <button type="button" className="button">Edit</button>
         </div>
       </div>
 
