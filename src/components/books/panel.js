@@ -8,9 +8,9 @@ import 'react-circular-progressbar/dist/styles.css';
 
 function panel({ id, title, category }) {
   const dispatch = useDispatch();
-  const ENDPOINT = `'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ZmlftpRIaWh7RCcDK6RR/books/${id}'`;
 
   const handleRemove = () => {
+    const ENDPOINT = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ZmlftpRIaWh7RCcDK6RR/books/${id}`;
     fetch(ENDPOINT, {
       method: 'DELETE',
     });
