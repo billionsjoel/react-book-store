@@ -8,8 +8,8 @@ function books() {
     <div className="books">
       {allBooks.map((book) => (
         <Panel
-          key={book.id}
-          id={book.id}
+          key={book.item_id}
+          id={book.item_id}
           title={book.title}
           category={book.category}
         />

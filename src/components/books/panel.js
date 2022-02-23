@@ -8,8 +8,12 @@ import 'react-circular-progressbar/dist/styles.css';
 
 function panel({ id, title, category }) {
   const dispatch = useDispatch();
+  const ENDPOINT = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ZmlftpRIaWh7RCcDK6RR/books';
 
   const handleRemove = () => {
+    fetch(ENDPOINT, {
+      method: 'DELETE',
+    });
     dispatch(removeBook({ id }));
   };
 
@@ -22,11 +26,15 @@ function panel({ id, title, category }) {
           <div className="name">Suzzanne Collins</div>
         </div>
         <div className="buttons">
-          <button type="button" className="button">Comments</button>
+          <button type="button" className="button">
+            Comments
+          </button>
           <button type="button" className="button" onClick={handleRemove}>
             Remove
           </button>
-          <button type="button" className="button">Edit</button>
+          <button type="button" className="button">
+            Edit
+          </button>
         </div>
       </div>
 
