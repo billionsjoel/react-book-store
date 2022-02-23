@@ -15,7 +15,19 @@ export const removeBook = (payload) => ({
   payload,
 });
 
-const apiData = () => (dispatch) => fetch(ENDPOINT);
+const apiData = () => (dispatch) => fetch(ENDPOINT)
+  .then((response) => response.json())
+  .then((data) => {
+    data.forEach((book) => {
+      dispatch({
+        type: ADD_BOOK,
+        payload: {
+          item_id: book,
+          ...data[book][0],
+        },
+      });
+    });
+  });
 
 const initialState = [];
 
