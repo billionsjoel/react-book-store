@@ -8,7 +8,7 @@
 
 ## Built With
 
-- HTML, CSS and Js (ES6).
+- HTML, SCSS and Js (ES6).
 - Using React Framework
 - Webpack
 - Git, Github and VsCode.
