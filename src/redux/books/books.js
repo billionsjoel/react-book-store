@@ -18,7 +18,7 @@ export const removeBook = (payload) => ({
 const apiData = () => (dispatch) => fetch(ENDPOINT)
   .then((response) => response.json())
   .then((data) => {
-    data.forEach((book) => {
+    Object.keys(data).forEach((book) => {
       dispatch({
         type: ADD_BOOK,
         payload: {
