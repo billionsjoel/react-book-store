@@ -6,19 +6,13 @@ import { addBook } from '../../redux/books/books';
 function form() {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
-  const length = useSelector(({ booksReducer }) => booksReducer.length);
+  const responseData = useSelector(({ booksReducer }) => booksReducer);
   const dispatch = useDispatch();
 
   const submitBookToStore = (e) => {
     e.preventDefault();
-    dispatch(
-      addBook({
-        id: `item${length + 1}`,
-        title,
-        category,
-      }),
-    );
 
+    dispatch(addBook(book));
     setTitle('');
     setCategory('');
   };
