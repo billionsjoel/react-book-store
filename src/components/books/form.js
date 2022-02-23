@@ -8,9 +8,27 @@ function form() {
   const [category, setCategory] = useState('');
   const responseData = useSelector(({ booksReducer }) => booksReducer);
   const dispatch = useDispatch();
+  const ENDPOINT = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ZmlftpRIaWh7RCcDK6RR/books';
 
   const submitBookToStore = (e) => {
     e.preventDefault();
+    const book = {
+      item_id: `book_${
+        responseData
+          .map((book) => book.item_id.split('_')[1])
+          .sort()
+          .reverse()[0] + 1 || 1
+      }`,
+      title: title.trim(),
+      category,
+    };
+
+    fetch(ENDPOINT,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(book),
+      });
 
     dispatch(addBook(book));
     setTitle('');
