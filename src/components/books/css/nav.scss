@@ -56,3 +56,19 @@
     }
   }
 }
+
+@media (max-width: 641px) {
+  .nav-container {
+    flex-direction: column;
+
+    & .menu {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .user {
+      margin-right: 2rem;
+    }
+  }
+}
