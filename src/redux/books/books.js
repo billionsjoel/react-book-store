@@ -1,9 +1,9 @@
+/* eslint-disable no-tabs */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
-
-const initialState = [];
+const ENDPOINT =	'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ZmlftpRIaWh7RCcDK6RR/books';
 
 export const addBook = (payload) => ({
   type: ADD_BOOK,
@@ -14,6 +14,10 @@ export const removeBook = (payload) => ({
   type: REMOVE_BOOK,
   payload,
 });
+
+const apiData = () => (dispatch) => fetch(ENDPOINT);
+
+const initialState = [];
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
