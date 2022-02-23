@@ -8,6 +8,11 @@ import Category from './components/categories/category';
 import Books from './components/books/books';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(apiData());
+  }, []);
+
   return (
     <Router>
       <Routes>
